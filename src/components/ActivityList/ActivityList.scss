@@ -1,0 +1,23 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.activityList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto 2 rem;
+
+  &__item {
+    margin: 0.2rem;
+  }
+
+  &__btn {
+    height: 2rem;
+    background-color: #fff;
+    border: 1px solid $colorSecondery;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    @include hover(border-color, $colorPrimary);
+    @include hover(background-color, $colorHover);
+  }
+}

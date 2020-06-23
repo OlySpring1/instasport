@@ -1,0 +1,50 @@
+@import "./styles/reset";
+
+body {
+  margin: 0;
+  font-family:  'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.App {
+  max-width: 1200px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+
+
+.ad {
+  padding: 60px;
+  background: lightgray; 
+  color: black;
+
+  &__title {
+    font-size: 4rem;
+  
+  }
+  &__content {
+    font-size: 21px;
+    font-weight: 200;
+  }
+  &__list{
+    padding-left: 40px;
+    list-style-type: disc;
+  }
+}

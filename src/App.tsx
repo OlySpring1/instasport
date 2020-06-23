@@ -1,26 +1,64 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import './App.scss';
+import Header from './components/Header/Header';
+import Ad from './components/Ad/Ad';
+import { useSelector, useDispatch } from 'react-redux';
+// import { Link, NavLink } from 'react-router-dom';
+import ClubsPage from './components/ClubsPage/ClubsPage';
+import {
+  loadData,
+  getCity,
+  getLoading,
+  getLoaded,
+  getMessage,
+} from './store/index';
+import Loading from './components/Loading/Loading';
 
-function App() {
+const App = () => {
+  const selectCity = useSelector(getCity);
+  const isLoaded = useSelector(getLoaded);
+  const isLoading = useSelector(getLoading);
+  const errorMessage = useSelector(getMessage);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(loadData());
+  }, [dispatch]);
+
+  useEffect(() => {
+    localStorage.setItem('selectCity', JSON.stringify(selectCity));
+  }, [selectCity]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      {errorMessage && <div>{errorMessage}</div>}
+
+
+      {isLoading && (
+        <div className="loading">
+          <Loading />
+        </div>
+      )}
+      {isLoaded && (
+        <>
+          <Header />
+          <main>
+            <Ad />
+            <ClubsPage />
+          </main>
+        </>
+      )}
+      {/* <Switch>
+        <Redirect exact from="/" to="/club" />
+        <Route
+          path="/city/:slug?"
+          render={() => (
+            <ClubsPage />
+          )}
+        />
+      </Switch> */}
+    </div >
+  )
 }
 
 export default App;
