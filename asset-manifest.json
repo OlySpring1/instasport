@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/OlySpring1/instasport.git/static/css/main.db0db119.chunk.css",
+    "main.js": "/OlySpring1/instasport.git/static/js/main.72c98302.chunk.js",
+    "main.js.map": "/OlySpring1/instasport.git/static/js/main.72c98302.chunk.js.map",
+    "runtime-main.js": "/OlySpring1/instasport.git/static/js/runtime-main.4541fdc4.js",
+    "runtime-main.js.map": "/OlySpring1/instasport.git/static/js/runtime-main.4541fdc4.js.map",
+    "static/js/2.cb6eb68e.chunk.js": "/OlySpring1/instasport.git/static/js/2.cb6eb68e.chunk.js",
+    "static/js/2.cb6eb68e.chunk.js.map": "/OlySpring1/instasport.git/static/js/2.cb6eb68e.chunk.js.map",
+    "index.html": "/OlySpring1/instasport.git/index.html",
+    "precache-manifest.8b01f957a4b41b702534c7975fc969f1.js": "/OlySpring1/instasport.git/precache-manifest.8b01f957a4b41b702534c7975fc969f1.js",
+    "service-worker.js": "/OlySpring1/instasport.git/service-worker.js",
+    "static/css/main.db0db119.chunk.css.map": "/OlySpring1/instasport.git/static/css/main.db0db119.chunk.css.map",
+    "static/js/2.cb6eb68e.chunk.js.LICENSE.txt": "/OlySpring1/instasport.git/static/js/2.cb6eb68e.chunk.js.LICENSE.txt",
+    "static/media/Header.scss": "/OlySpring1/instasport.git/static/media/Checked3.6184c2e9.svg",
+    "static/media/ActivityList.scss": "/OlySpring1/instasport.git/static/media/Refresh2.2fee0e96.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4541fdc4.js",
+    "static/js/2.cb6eb68e.chunk.js",
+    "static/css/main.db0db119.chunk.css",
+    "static/js/main.72c98302.chunk.js"
+  ]
+}
