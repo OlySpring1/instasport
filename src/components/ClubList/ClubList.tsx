@@ -1,23 +1,28 @@
 import React from 'react';
+import {
+  CSSTransition,
+  TransitionGroup,
+} from 'react-transition-group';
+import './ClubList.scss';
 import Club from '../CartClub/CartClub';
 
 type ClubListProps = {
   visibleClubs: SportClub[];
 }
-const ClubList:React.FC<ClubListProps> = ({visibleClubs}) => {
-  
+const ClubList: React.FC<ClubListProps> = ({ visibleClubs }) => {
   return (
-    <section className="clubs">
-    <ul className="clubList">
+    <TransitionGroup className="todo-list clubList">
       {visibleClubs.map((club) => (
-        <Club
+        <CSSTransition
           key={club.link}
-          club={club}
-        />
-      ))
-      }
-    </ul>
-  </section>
+          timeout={500}
+          classNames="club"
+        >
+          <Club club={club} />
+        </CSSTransition>
+      ))}
+    </TransitionGroup>
   )
 }
+
 export default ClubList;

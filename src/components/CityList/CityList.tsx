@@ -31,7 +31,7 @@ const CityList = () => {
       <ul className="cityList">
         <Link
           to="/city"
-          className="refresh-btn"
+          className="refreshCity-btn"
           onClick={() => dispatch(setRsetCity())}
         />
         {uniqCity.map((city) => (

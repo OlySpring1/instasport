@@ -11,7 +11,7 @@
     height: 100%;
     border-radius: 0.5rem;
     transition: transform 0.3s;
-      &:hover {
+    &:hover {
       transform: scale(1.1);
     }
   }
@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-  }  
+  }
 }
 .logo-title {
   font-size: 2rem;
@@ -30,3 +30,5 @@
   display: flex;
   align-items: center;
 }
+
+

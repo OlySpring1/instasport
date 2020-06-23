@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import './CartClub.scss';
 
 type CartClub = {
@@ -6,10 +6,9 @@ type CartClub = {
 }
 
 const CartClub: React.FC<CartClub> = ({ club }) => {
-  console.log(club.logo);
-  console.log(club);
-  const errorLogo = /.jpg|.svg|.png/g.test(club.logo);
-  console.log('errorLogo', errorLogo);
+  const errorLogo = useMemo(() => (
+    /.jpg|.svg|.png/g.test(club.logo)
+  ), [club.logo])
 
   return (
     <li
@@ -29,18 +28,15 @@ const CartClub: React.FC<CartClub> = ({ club }) => {
             className="cartClub__logo"
           />
         )
-
           : <div className="cartClub__logo logo-title">
             {club.title}
           </div>
-
         }
       </a>
       <p className="cartClub__title">
         {club.title_short}
       </p>
     </li>
-
   )
 }
 

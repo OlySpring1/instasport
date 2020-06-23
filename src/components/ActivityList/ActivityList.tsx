@@ -41,6 +41,7 @@ const ActivityList: React.FC<ActivityListProps> = ({ selectActivity, resetActivi
             >
               <button
                 type="button"
+                data-hover={activity}
                 className="activityList__btn"
                 onClick={() =>
                   selectActivity(activity)

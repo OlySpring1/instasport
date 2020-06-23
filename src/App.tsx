@@ -10,7 +10,6 @@ import {
   getCity,
   getLoading,
   getLoaded,
-  getMessage,
 } from './store/index';
 import Loading from './components/Loading/Loading';
 
@@ -18,7 +17,6 @@ const App = () => {
   const selectCity = useSelector(getCity);
   const isLoaded = useSelector(getLoaded);
   const isLoading = useSelector(getLoading);
-  const errorMessage = useSelector(getMessage);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -31,9 +29,6 @@ const App = () => {
 
   return (
     <div className="App">
-      {errorMessage && <div>{errorMessage}</div>}
-
-
       {isLoading && (
         <div className="loading">
           <Loading />
