@@ -3,7 +3,7 @@ import './App.scss';
 import Header from './components/Header/Header';
 import Ad from './components/Ad/Ad';
 import { useSelector, useDispatch } from 'react-redux';
-// import { Link, NavLink } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import ClubsPage from './components/ClubsPage/ClubsPage';
 import {
   loadData,
@@ -43,15 +43,7 @@ const App = () => {
           </main>
         </>
       )}
-      {/* <Switch>
-        <Redirect exact from="/" to="/club" />
-        <Route
-          path="/city/:slug?"
-          render={() => (
-            <ClubsPage />
-          )}
-        />
-      </Switch> */}
+      <Redirect exact from="/" to="/club" />
     </div >
   )
 }

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './ClubsPage.scss';
 import { useSelector } from 'react-redux';
 import {
   getClubsInCity,
@@ -16,12 +15,11 @@ const ClubsPage = () => {
     setVisibleClubs(visibleClubsInCity)
   ), [visibleClubsInCity]);
 
-  const getClubsWithSelectActivity =  (selectActivity: string) => {
-      setVisibleClubs(visibleClubsInCity.filter(club => (
-        club.activity.find(activity => activity.slug === selectActivity)
-      )))
-    };
-
+  const getClubsWithSelectActivity = (selectActivity: string) => {
+    setVisibleClubs(visibleClubsInCity.filter(club => (
+      club.activity.find(activity => activity.slug === selectActivity)
+    )))
+  };
 
   const resetActivity = () => {
     setVisibleClubs(visibleClubsInCity);
@@ -30,12 +28,11 @@ const ClubsPage = () => {
   return (
     <div className="container">
       <CityList />
-      <ActivityList 
+      <ActivityList
         selectActivity={getClubsWithSelectActivity}
         resetActivity={resetActivity}
       />
-     <ClubList visibleClubs={visibleClubs}/>
-
+      <ClubList visibleClubs={visibleClubs} />
     </div>
   )
 }

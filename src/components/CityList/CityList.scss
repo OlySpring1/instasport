@@ -25,7 +25,6 @@
     letter-spacing: 1px;
     @include hover(text-shadow, 0 01px rgba(56, 56, 56, 0.3));
     @include hover(color, black);
-
   }
 
   &__link:hover::after {
@@ -44,7 +43,7 @@
     left: 0;
     width: 100%;
     height: 4px;
-    background:#777;
+    background: #777;
     content: "";
     opacity: 0;
     transition: opacity 0.3s, transform 0.3s;
@@ -54,7 +53,6 @@
   &__link:focus {
     opacity: 1;
     transform: translateY(0);
-
   }
 }
 
@@ -67,11 +65,11 @@
   justify-content: center;
   border: 3px solid $colorSecondery;
 
-  &:hover::after{
+  &:hover::after {
     transform: rotate(90deg);
     transition: transform 0.3s;
   }
-  
+
   &::after {
     content: "";
     width: 1rem;

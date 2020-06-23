@@ -3,7 +3,26 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2.5rem;
   gap: 2.5rem;
+  justify-items: center;
   margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 960px) {
+  .clubList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .clubList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .clubList {
+    grid-template-columns: 1fr;
+  }
 }
 
 .club-enter {
