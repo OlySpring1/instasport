@@ -36,6 +36,10 @@
     opacity: 1;
     transform: translateY(0);
   }
+  &__link:active::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
   &__link:after {
     position: absolute;
@@ -78,4 +82,16 @@
     transform: rotate(0deg);
     background-image: url(../../img/Refresh2.svg);
   }
+}
+
+.is-active:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #777;
+  content: "";
+  opacity: 1;
+  transform: translateY(0px);
 }
