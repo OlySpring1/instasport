@@ -2,7 +2,7 @@
 React Instasport
 =====================
 
-[DEMO LINK](https://github.com/OlySpring1/instasport)
+[DEMO LINK](https://olyspring1.github.io/instasport/)
 ***
 Task:
 -----------------------------------
