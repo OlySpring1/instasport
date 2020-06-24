@@ -25,9 +25,7 @@
   background: rgb(246, 244, 244);
   color: black;
   border-radius: 0.5rem;
-  display: flex;
-  justify-content: center;
-
+  text-align: center;
   &__title {
     font-size: 4rem;
     padding: 2rem 14rem;
@@ -35,10 +33,31 @@
     color: #777;
   }
 }
+@media screen and (max-width: 1024px) {
+  .ads {
+    padding: 40px;
+
+    &__title {
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 2rem 0;
+      border: 1px solid #777;
+      color: #777;
+    }
+  }
+}
 
 @media screen and (max-width: 680px) {
-  .ads__title {
-    font-size: 2rem;
+  .ads {
+    padding: 40px;
+
+    &__title {
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 2rem 0;
+      border: 1px solid #777;
+      color: #777;
+    }
   }
 }
 
