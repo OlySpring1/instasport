@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/instasport/static/css/main.3758bd17.chunk.css",
+    "main.css": "/instasport/static/css/main.b6f927a6.chunk.css",
     "main.js": "/instasport/static/js/main.72c98302.chunk.js",
     "main.js.map": "/instasport/static/js/main.72c98302.chunk.js.map",
     "runtime-main.js": "/instasport/static/js/runtime-main.24678e2b.js",
@@ -8,9 +8,9 @@
     "static/js/2.cb6eb68e.chunk.js": "/instasport/static/js/2.cb6eb68e.chunk.js",
     "static/js/2.cb6eb68e.chunk.js.map": "/instasport/static/js/2.cb6eb68e.chunk.js.map",
     "index.html": "/instasport/index.html",
-    "precache-manifest.9828e83dbc510b12e381b007243cab24.js": "/instasport/precache-manifest.9828e83dbc510b12e381b007243cab24.js",
+    "precache-manifest.994b47a8c8f2d30e44f8d1e00fd5b149.js": "/instasport/precache-manifest.994b47a8c8f2d30e44f8d1e00fd5b149.js",
     "service-worker.js": "/instasport/service-worker.js",
-    "static/css/main.3758bd17.chunk.css.map": "/instasport/static/css/main.3758bd17.chunk.css.map",
+    "static/css/main.b6f927a6.chunk.css.map": "/instasport/static/css/main.b6f927a6.chunk.css.map",
     "static/js/2.cb6eb68e.chunk.js.LICENSE.txt": "/instasport/static/js/2.cb6eb68e.chunk.js.LICENSE.txt",
     "static/media/Header.scss": "/instasport/static/media/Checked3.6184c2e9.svg",
     "static/media/ActivityList.scss": "/instasport/static/media/Refresh2.2fee0e96.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.24678e2b.js",
     "static/js/2.cb6eb68e.chunk.js",
-    "static/css/main.3758bd17.chunk.css",
+    "static/css/main.b6f927a6.chunk.css",
     "static/js/main.72c98302.chunk.js"
   ]
 }
